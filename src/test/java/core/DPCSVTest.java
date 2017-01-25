@@ -20,8 +20,8 @@ ArrayList<String[]> al = new ArrayList<>();//[["a","b","c","d"],["a","b","c","d"
               return al.iterator();}
 
        @Test(dataProvider = "dp")
-       public void test(String a, String b, String c, String d) {
-              System.out.println(a + ", " + b + ", " + c + ", " + d);
-              assertThat(Integer.parseInt(b) + Integer.parseInt(c), is(Integer.parseInt(d)));}
+       public void test(String a, String first_number, String second_number, String summary) {
+              System.out.println(a + ", " + first_number + ", " + second_number + ", " + summary);
+              assertThat(Integer.parseInt(first_number) + Integer.parseInt(second_number), is(Integer.parseInt(summary)));}
 }
 
